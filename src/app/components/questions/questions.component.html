@@ -1,0 +1,158 @@
+<div class="container-fluid bg-light">
+  <div class="row">
+    <div class="col">
+
+      <mat-horizontal-stepper [linear]="isLinear" #stepper labelPosition="bottom">
+        <div *ngFor="let value of Simple; let i = index">
+
+          <div *ngIf="value.stepControl.startsWith('st')">
+            <mat-step stepControl="value.stepControl" label="التجربة رقم {{i + 1}}" class="mat-step">
+              <mat-card class="cardQuestion">
+
+                <div *ngIf="value.Recommendations" class="recomoendation">
+                  <mat-accordion>
+                    <mat-expansion-panel (opened)="panelOpenState = false" (closed)="panelOpenState = open">
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                          <mat-icon class="info-mat">info</mat-icon>
+                          <p class="recomoendationText">
+                            توصيات قبل أداء الاختبار
+                          </p>
+                        </mat-panel-title>
+                        <!-- <mat-panel-description>
+                          الرجاء الضغط على السهم للاطلاع على الارشادات
+                        </mat-panel-description> -->
+                      </mat-expansion-panel-header>
+                      <p class="recomoendationText">{{value.Recommendations}}</p>
+                    </mat-expansion-panel>
+                  </mat-accordion>
+                </div>
+
+
+                <div *ngFor="let Question of value.Questions">
+
+
+                  <!-- FreeText-->
+                  <div class="alternativeBackColor" *ngIf="Question.Type == 'FreeText'">
+
+                    <form [formGroup]="FreeText">
+                      <div>
+                        <mat-label class="form-control-placeholder" for="name">
+                          {{Question.Question}}
+                        </mat-label>
+                      </div>
+                      <input matInput placeholder="الجواب" type="name" class="form-control" required autocomplete="off"
+                        formControlName="userName"> 
+                    </form>
+
+
+                  </div>
+
+                  <!-- select-->
+                  <div class="alternativeBackColor" *ngIf="Question.Type == 'select'">
+
+                    <form [formGroup]="select">
+                      <div>
+                        <mat-label class="form-control-placeholder" for="name">
+                          {{Question.Question}}
+                        </mat-label>
+                      </div>
+                      <select class="form-control" id="sel1" name="sellist1">
+                        <option *ngFor="let key of Question.Answer;" [value]="key">{{key}}</option>
+                      </select>
+                    </form>
+
+
+                    <br>
+                  </div>
+                  <!-- RadioButton-->
+
+                  <div class="alternativeBackColor" *ngIf="Question.Type == 'RadioButton'">
+
+                    <form >
+                      <div>
+                        <mat-label class="form-control-placeholder" for="name">
+                          {{Question.Question}}
+                        </mat-label>
+                      </div>
+                      <mat-radio-button class="radio-button-mat" *ngFor="let key of Question.Answer;" [value]="key">
+                        {{key}}</mat-radio-button>
+                    </form>
+
+
+                  </div>
+
+
+
+                  <br>
+
+
+
+                </div>
+                <div class="NextButton"> <button mat-raised-button class="NextButtoncss" color="primary"
+                    matStepperNext>التالي</button></div>
+
+                    
+              </mat-card>
+            </mat-step>
+          </div>
+
+          <div *ngIf="value.stepControl.startsWith('Comp')">
+            <mat-step stepControl="value.stepControl" label="التجربة رقم {{i + 1}}">
+              <ng-template matStepLabel>تقديم</ng-template>
+              <p>
+                <mat-icon class="thumb_up">thumb_up</mat-icon>
+                بعد الضغط على إرسال سيتم النقل تلقائيا لاداء الإختبار الحقيقي
+              </p>
+              <div style="text-align: center; padding-top: 10px;">
+                <!-- <button mat-raised-button color="primary" matStepperPrevious>Back</button> -->
+                <button mat-raised-button color="warn" class="sendVideo"  
+                  (click)="submit()">
+                  إرسال <i *ngIf="isSaving">[loading...]</i>
+                </button>
+              </div>
+              
+              <!-- <button mat-stroked-button color="warn" *ngIf="isRecording" (click)="stop()">Stop</button> -->
+
+
+            </mat-step>
+          </div>
+
+        </div>
+      </mat-horizontal-stepper>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row">
+  <div class="videoContiner">
+    <div class="card sticky-top">
+
+      <video #recordVideo class="record-video" [attr.controls]="!isRecording && blob ? true : null"
+        [muted]="!isRecording" [volume]="isRecording ? 0 : 1"></video>
+
+      <div class="time-row" *ngIf="isRecording">
+        <div class="time">{{timePassed | date:'mm:ss'}}</div>
+      </div>
+
+      <button mat-stroked-button color="warn" *ngIf="!isRecording" [disabled]="isSaving" (click)="start()">Start
+        Recording</button>
+
+
+
+    </div>
+
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+

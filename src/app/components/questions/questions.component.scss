@@ -1,0 +1,235 @@
+
+.app-header {
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
+}
+
+.main-wrapper {
+	height: 100%;
+}
+
+.positronx {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.main-wrapper .example-form {
+	min-width: 100%;
+	max-width: 300px;
+	width: 100%;
+}
+
+.main-wrapper .example-full-width,
+.main-wrapper .btn-block {
+	width: 100%;
+}
+
+.main-wrapper mat-card-header {
+	text-align: center;
+	width: 100%;
+	display: block;
+	font-weight: 700;
+}
+
+.main-wrapper mat-card-header mat-card-title {
+	font-size: 30px;
+	margin: 0;
+}
+
+
+
+.main-wrapper .mat-stroked-button {
+	border: 1px solid currentColor;
+	line-height: 54px;
+	background: #FFF7FA;
+}
+
+.main-wrapper .mat-form-field-appearance-legacy .mat-form-field-infix {
+	padding: 0.8375em 0;
+}
+
+.record-video {
+  /*background: black;
+  width: 640px;
+  height: 480px;
+  border-radius: 20px;*/
+  background: #fff;
+    -o-object-fit: cover;
+    object-fit: cover;
+    opacity: 0.5;
+    height: 9VH;
+    width: 100%;
+
+  &:focus {
+    outline: none;
+  }
+
+  @media (max-width: 720px) {
+    width: 320px;
+    height: 240px;
+  }
+}
+
+
+.row{
+  margin-top: 10px;
+
+  .button{
+    margin: 0 10px;
+  }
+}
+
+
+.time-row{
+  height: 24px;
+  text-align: center;
+}
+
+
+.stepsInfo {
+  border-bottom: 1px #e0e0e0 solid;
+  padding-bottom: 10px;
+}
+
+.RecordingActions {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.videoContiner {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+
+.NextButton {
+  margin-top: 20px;
+  
+}
+
+.NextButtoncss {
+  font-family: 'FSAlbertArabic', cursive;  
+  /* background: #fff; */
+  font-size: 16px;
+  font-weight: normal; 
+}
+
+.mat-step-text-label{
+  font-weight: bold;
+  font-family: 'FSAlbertArabic', cursive !important;
+  font-size: 16px;
+  font-weight: normal; 
+}
+
+.cardQuestion {
+  margin-top: 0px;
+}
+
+.recomoendation {
+  margin-bottom: 4%;
+  font-family: 'FSAlbertArabic', cursive;  
+  /* background: #fff; */
+  font-size: 16px;
+  font-weight: normal;  
+}
+//
+
+.alternativeBackColor {
+  background: #80808014;
+    padding: 10px;
+    margin-bottom: 0.1%;
+    border-radius: 9px;
+}
+
+.form-control-placeholder, .form-control {
+  font-family: 'FSAlbertArabic', cursive;  
+  /* background: #fff; */
+  font-size: 16px;
+  font-weight: normal;  
+}
+
+.form-control {
+  padding: 1px;
+}
+
+.radio-button-mat {
+  font-family: 'FSAlbertArabic', cursive;  
+  /* background: #fff; */
+  font-size: 16px;
+  font-weight: normal;  
+}
+
+.recomoendationText {
+  font-family: 'FSAlbertArabic', cursive;  
+  /* background: #fff; */
+  font-size: 16px;
+  font-weight: normal; 
+}
+
+
+
+
+p.ng-star-inserted {
+  text-align: center;
+  background: whitesmoke;
+  width: 73%;
+  margin: 0 auto;
+  padding: 50px;
+  border-radius: 5px;
+  font-size: 23px;
+  font-weight: bold;
+  line-height: 1.5;
+  .mat-icon {
+    display: inline-block;
+    width: 100%;
+    font-size: 70px;
+    color: green;
+    overflow: hidden;
+    height: auto;
+    margin-bottom: 15px;
+    padding-top: 10px;
+}
+}
+
+.info-mat {
+  margin-left: 5px;
+}
+
+p.recomoendationText {
+  padding-top: 4px;
+}
+
+.form-control-placeholder {
+  display: block;
+  margin-bottom: 5px;
+}
+.sendVideo {
+  font-family: 'FSAlbertArabic', cursive;  
+  /* background: #fff; */
+  font-size: 16px;
+  font-weight: normal;  
+}
+
+
+
+
+
+.mat-expansion-panel-header-title, [dir=rtl] .mat-expansion-panel-header-description {
+  margin-right: 0;
+  margin-left: 16px;
+  padding-top: 12px;
+}
+
+
+.mat-radio-label-content {
+  padding-right: 8px;
+  padding-left: 7px;
+}

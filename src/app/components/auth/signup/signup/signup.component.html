@@ -1,0 +1,41 @@
+
+
+<div class="container-fluid bg-light">
+  <div class="row no-gutter">
+      <!-- The image half -->
+      <div class="col-md-6 d-none d-md-flex bg-image"></div>
+
+
+      <!-- The content half -->
+      <div class="col-md-6 bg-light">
+          <div class="login d-flex align-items-center py-5">
+
+              <!-- Demo content-->
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-10 col-xl-7 mx-auto">
+                          <h3 class="display-4 loginTitle">تسجيل الدخول</h3>                          
+                          <form (submit)="onSignup(signupForm)" #signupForm="ngForm" >
+                              <div class="form-group mb-3">
+                                <input matInput placeholder="الإسم الأول" type="text"  name="fName" ngModel #fNameInput="ngModel" required autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4" >
+                                  
+                              </div>
+                              <div class="form-group mb-3">
+                                <input matInput type="text"  placeholder="الإسم الأخير"  name="lName" ngModel #nameInput="ngModel" required class="form-control rounded-pill border-0 shadow-sm px-4 text-primary">
+                              </div>
+                              <button type="submit" class="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm">دخول</button>
+                          </form>
+                          <!-- <p class="text-muted mb-4">معلومات مهمة قبل الدخول لإداء تجربة الإختبار</p> -->
+                      </div>
+                  </div>
+              </div><!-- End -->
+
+          </div>
+      </div><!-- End -->
+
+  </div>
+</div>
+
+
+
+
