@@ -1,0 +1,42 @@
+[
+  {    "Recommendations" : "اختبار واحد",                  
+    "stepControl" : "step1",
+    "Questions" : [
+      { "Type": "FreeText", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":["الرياض"]},
+      { "Type": "RadioButton", "Question": "كم يبلغ طول جبال الهملايا", "Answer":["الرياض", "القاهرة"]},
+      { "Type": "select", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":["مليون كم مربع", "مائة مليار كم مربع"]}
+    ]},
+  {    "Recommendations" : "اختبار واحد",                  
+    "stepControl" : "step1",
+    "Questions" : [
+      { "Type": "FreeText", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":["الرياض"]},
+      { "Type": "RadioButton", "Question": "كم يبلغ طول جبال الهملايا", "Answer":["الرياض", "القاهرة"]},
+      { "Type": "select", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":["مليون كم مربع", "مائة مليار كم مربع"]}
+    ]},
+  {    "Recommendations" : "اختبار واحد",                  
+    "stepControl" : "step1",
+    "Questions" : [
+      { "Type": "FreeText", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":["الرياض"]},
+      { "Type": "RadioButton", "Question": "كم يبلغ طول جبال الهملايا", "Answer":["الرياض", "القاهرة"]},
+      { "Type": "select", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":["مليون كم مربع", "مائة مليار كم مربع"]}
+    ]},
+  {    "Recommendations" : "اختبار واحد",                  
+    "stepControl" : "step1",
+    "Questions" : [
+      { "Type": "FreeText", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":["الرياض"]},
+      { "Type": "RadioButton", "Question": "كم يبلغ طول جبال الهملايا", "Answer":["الرياض", "القاهرة"]},
+      { "Type": "select", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":["مليون كم مربع", "مائة مليار كم مربع"]}
+    ]},
+  {    "Recommendations" : "اختبار واحد",                  
+    "stepControl" : "step1",
+    "Questions" : [
+      { "Type": "FreeText", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":["الرياض"]},
+      { "Type": "RadioButton", "Question": "كم يبلغ طول جبال الهملايا", "Answer":["الرياض", "القاهرة"]},
+      { "Type": "select", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":["مليون كم مربع", "مائة مليار كم مربع"]}
+    ]},
+    {
+      "Recommendations" : "شكرا لتواصلكم معنا .....",                  
+      "stepControl" : "Completed",
+      "Questions" : []            
+     }
+]

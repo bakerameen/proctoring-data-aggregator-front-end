@@ -9,7 +9,7 @@ import { HttpClient,  HttpHeaders } from '@angular/common/http';
 import { Questions } from '../models/questions.model';
 import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 import { AuthService } from '../auth/auth.service';
-
+import complex from "../../../assets/simpleexam.json";
 
 // Ibrahim Code
 const browser = <any>navigator;
@@ -73,77 +73,7 @@ formPhoneGroup : FormGroup;
     downloadLink;
 
     userId;
-
-
-// : Questions[]
-    Simple  = [
-      {
-        "Recommendations" : 'سيتم التركيز على هذه النقاط لاداء هذا الاختبار - سيتم التركيز على هذه النقاط لاداء هذا الاختبار - سيتم التركيز على هذه النقاط لاداء هذا الاختبار - ',                  
-        "stepControl" : 'step1',
-        "Questions" : [
-          { "Type": "FreeText", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":['ffff']},
-          { "Type": "RadioButton", "Question": "كم يبلغ طول جبال الهملايا", "Answer":["الرياض", "القاهرة"]},
-          { "Type": "select", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":["مليون كم مربع", "مائة مليار كم مربع"]}
-        ]            
-       },
-       {
-        "Recommendations" : '',                  
-        "stepControl" : 'step2',
-        "Questions" : [
-          { "Type": "FreeText", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":[]},
-          { "Type": "RadioButton", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":["الرياض", "القاهرة"]},
-          { "Type": "select", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":["مليون كم مربع", "مائة مليار كم مربع"]}
-        ]            
-       },
-       {
-        "Recommendations" : 'سيتم التركيز على هذه النقاط لاداء هذا الاختبار - سيتم التركيز على هذه النقاط لاداء هذا الاختبار - سيتم التركيز على هذه النقاط لاداء هذا الاختبار - ',                  
-        "stepControl" : 'step3',
-        "Questions" : [
-          { "Type": "FreeText", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":[]},
-          { "Type": "RadioButton", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":["الرياض", "القاهرة"]},
-          { "Type": "select", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":["مليون كم مربع", "مائة مليار كم مربع"]}
-        ]            
-       },   
-       {
-        "Recommendations" : 'شكرا لتواصلكم معنا .....',                  
-        "stepControl" : 'Completed',
-        "Questions" : []            
-       },
-    ];
-    complex = [
-      {
-        "Recommendations" : 'هذا الإختبار بمثابة اختبار حقيقي ',                  
-        "stepControl" : 'step1',
-        "Questions" : [
-          { "Type": "FreeText", "Question": "كم يبلغ طول سفينة النبي نوح", "Answer":["مليون كم مربع", "مائة مليار كم مربع"]},
-          { "Type": "RadioButton", "Question": "كم يبلغ طول جبال الهملايا", "Answer":["الرياض", "القاهرة"]},
-          { "Type": "select", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":["مليون كم مربع", "مائة مليار كم مربع"]}
-        ]            
-       },
-       {
-        "Recommendations" : '',                  
-        "stepControl" : 'step2',
-        "Questions" : [
-          { "Type": "FreeText", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":[]},
-          { "Type": "RadioButton", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":["الرياض", "القاهرة"]},
-          { "Type": "select", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":["مليون كم مربع", "مائة مليار كم مربع"]}
-        ]            
-       },
-       {
-        "Recommendations" : 'سيتم التركيز على هذه النقاط لاداء هذا الاختبار - سيتم التركيز على هذه النقاط لاداء هذا الاختبار - سيتم التركيز على هذه النقاط لاداء هذا الاختبار - ',                  
-        "stepControl" : 'step3',
-        "Questions" : [
-          { "Type": "FreeText", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":[]},
-          { "Type": "RadioButton", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":["الرياض", "القاهرة"]},
-          { "Type": "select", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":["مليون كم مربع", "مائة مليار كم مربع"]}
-        ]            
-       },   
-       {
-        "Recommendations" : 'شكرا لتواصلكم معنا .....',                  
-        "stepControl" : 'Completed',
-        "Questions" : []            
-       },
-    ];
+complexList : Questions[] =  complex;
 
 
 

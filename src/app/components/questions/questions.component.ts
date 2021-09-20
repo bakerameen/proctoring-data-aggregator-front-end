@@ -8,6 +8,7 @@ import { Questions } from '../models/questions.model';
 import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 import { HttpClient,  HttpHeaders } from '@angular/common/http';
 import { AuthService } from '../auth/auth.service';
+import simple from "../../../assets/simpleexam.json";
 
 // Ibrahim Code
 const browser = <any>navigator;
@@ -71,43 +72,9 @@ formPhoneGroup : FormGroup;
     downloadLink;
 
     userId;
+    simple: any[] = [];
+    simpleList: Questions[] = simple;
 
-
-// : Questions[]
-    Simple = [
-      {
-        "Recommendations" : 'سيتم التركيز على هذه النقاط لاداء هذا الاختبار - سيتم التركيز على هذه النقاط لاداء هذا الاختبار - سيتم التركيز على هذه النقاط لاداء هذا الاختبار - ',                  
-        "stepControl" : 'step1',
-        "Questions" : [
-          { "Type": "FreeText", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":['ffff']},
-          { "Type": "RadioButton", "Question": "كم يبلغ طول جبال الهملايا", "Answer":["الرياض", "القاهرة"]},
-          { "Type": "select", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":["مليون كم مربع", "مائة مليار كم مربع"]}
-        ]            
-       },
-       {
-        "Recommendations" : '',                  
-        "stepControl" : 'step2',
-        "Questions" : [
-          { "Type": "FreeText", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":[]},
-          { "Type": "RadioButton", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":["الرياض", "القاهرة"]},
-          { "Type": "select", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":["مليون كم مربع", "مائة مليار كم مربع"]}
-        ]            
-       },
-       {
-        "Recommendations" : 'سيتم التركيز على هذه النقاط لاداء هذا الاختبار - سيتم التركيز على هذه النقاط لاداء هذا الاختبار - سيتم التركيز على هذه النقاط لاداء هذا الاختبار - ',                  
-        "stepControl" : 'step3',
-        "Questions" : [
-          { "Type": "FreeText", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":[]},
-          { "Type": "RadioButton", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":["الرياض", "القاهرة"]},
-          { "Type": "select", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":["مليون كم مربع", "مائة مليار كم مربع"]}
-        ]            
-      },   
-       {
-        "Recommendations" : 'شكرا لتواصلكم معنا .....',                  
-        "stepControl" : 'Completed',
-        "Questions" : []            
-       },
-    ];
 
 
 
@@ -119,6 +86,13 @@ formPhoneGroup : FormGroup;
     }
 
   ngOnInit(): void {
+
+  //   this.authServ.getJSON().subscribe(data => {      
+     
+  //     this.simple = data;
+  //     console.log(this.simple);
+  // });
+
 this.start();
 
     // Get Team

@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { AuthData } from '../models/auth-data.model';
 import { Subject } from 'rxjs';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -27,7 +28,16 @@ export class AuthService {
   private animationUpdate = new Subject<any>();
   private disableAniamtionUpdate = new Subject<any>();
 
-  constructor(private http: HttpClient, private router: Router) { }
+  constructor(private http: HttpClient, private router: Router) {
+  //   this.getJSON().subscribe(data => {
+  //     console.log(data);
+  // });
+   }
+
+
+//    public getJSON(): Observable<any> {
+//     return this.http.get("./assets/exam.json");
+// }
 
   // auth functions
   getToken() {
@@ -224,5 +234,6 @@ export class AuthService {
     });
   }
 
+  
 
 }
