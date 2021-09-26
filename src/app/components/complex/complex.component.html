@@ -14,7 +14,7 @@
           <div *ngFor="let value of complexList; let i = index">
   
             <div *ngIf="value.stepControl.startsWith('st')">
-              <mat-step stepControl="value.stepControl" label="التجربة رقم {{i + 1}}" class="mat-step">
+              <mat-step stepControl="value.stepControl" label="المجموعة  {{i + 1}}" class="mat-step">
                 <mat-card class="cardQuestion">
   
                   <div *ngIf="value.Recommendations" class="recomoendation">
@@ -106,12 +106,12 @@
             </div>
   
             <div *ngIf="value.stepControl.startsWith('Comp')">
-              <mat-step stepControl="value.stepControl" label="التجربة رقم {{i + 1}}">
-                <ng-template matStepLabel>انتهى</ng-template>
+              <mat-step stepControl="value.stepControl" label="المجموعة  {{i + 1}}">
+                <ng-template matStepLabel>ارسال</ng-template>
                 <p>
                   <mat-icon class="thumb_up">thumb_up</mat-icon>تم الانتهاء من الاختبار بنجاح
                 </p>
-                <div>
+                <div class="sendVideoContainer">
                   <!-- <button mat-raised-button color="primary" matStepperPrevious>Back</button> -->
                   <button mat-raised-button color="warn" class="sendVideo"  
                     (click)="submit()">
@@ -156,7 +156,10 @@
   
   </div>
   
-  
+  <div class="countdawon">
+    <span class="countdownspan">تبقى من الوقت</span>
+    <countdown #cd [config]="{leftTime: 1800.000}" (event)="handleEvent($event)"></countdown>
+  </div>
   
   
   

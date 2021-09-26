@@ -9,7 +9,8 @@ import { HttpClient,  HttpHeaders } from '@angular/common/http';
 import { Questions } from '../models/questions.model';
 import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 import { AuthService } from '../auth/auth.service';
-import complex from "../../../assets/simpleexam.json";
+import complex from "../../../assets/complexexam.json";
+import { CountdownEvent, CountdownModule } from 'ngx-countdown';
 
 // Ibrahim Code
 const browser = <any>navigator;
@@ -45,7 +46,7 @@ formPhoneGroup : FormGroup;
     // Ibrahim code
 
     @Input() isSaving;
-    @Input() timeout = 5 * 60000; // in ms
+    @Input() timeout = 30 * 60000; // in ms
     @Input() minLength = 10000; // in ms
     @Input() playerOptions: MediaStreamConstraints = {
         audio: true,
@@ -263,5 +264,11 @@ this.authServ.createSecondVideo(body);
     });
     }
 
+    handleEvent(e: CountdownEvent) {
+      if (e.action == 'done') {
+        console.log('time finish');
+      this.submit();
+      }
+    }
 
 }

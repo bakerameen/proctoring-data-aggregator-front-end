@@ -1,3 +1,5 @@
+<div class="cheatTitle"><h2>إختبار التدريب على الغش</h2></div>
+<div class="userName"><h2>{{userId}}</h2></div>
 <div class="container-fluid bg-light">
   <div class="row">
     <div class="col">
@@ -6,7 +8,7 @@
         <div *ngFor="let value of simpleList; let i = index">
 
           <div *ngIf="value.stepControl.startsWith('st')">
-            <mat-step stepControl="value.stepControl" label="التجربة رقم {{i + 1}}" class="mat-step">
+            <mat-step stepControl="value.stepControl" label="المجموعة  {{i + 1}}" class="mat-step">
               <mat-card class="cardQuestion">
 
                 <div *ngIf="value.Recommendations" class="recomoendation">
@@ -98,7 +100,7 @@
           </div>
 
           <div *ngIf="value.stepControl.startsWith('Comp')">
-            <mat-step stepControl="value.stepControl" label="التجربة رقم {{i + 1}}">
+            <mat-step stepControl="value.stepControl" label="المجموعة  {{i + 1}}">
               <ng-template matStepLabel>تقديم</ng-template>
               <p>
                 <mat-icon class="thumb_up">thumb_up</mat-icon>
@@ -133,12 +135,12 @@
       <video #recordVideo class="record-video" [attr.controls]="!isRecording && blob ? true : null"
         [muted]="!isRecording" [volume]="isRecording ? 0 : 1"></video>
 
-      <div class="time-row" *ngIf="isRecording">
+      <!-- <div class="time-row" *ngIf="isRecording">
         <div class="time">{{timePassed | date:'mm:ss'}}</div>
-      </div>
+      </div> -->
 
-      <button mat-stroked-button color="warn" *ngIf="!isRecording" [disabled]="isSaving" (click)="start()">Start
-        Recording</button>
+      <!-- <button mat-stroked-button color="warn" *ngIf="!isRecording" [disabled]="isSaving" (click)="start()">Start
+        Recording</button> -->
 
 
 
@@ -150,7 +152,10 @@
 </div>
 
 
-
+<div class="countdawon">
+  <!-- <span class="countdownspan">تبقى من الوقت</span> -->
+  <countdown #cd [config]="{leftTime: 900.000}" (event)="handleEvent($event)"></countdown>
+</div>
 
 
 

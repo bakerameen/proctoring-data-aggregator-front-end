@@ -1,42 +1,218 @@
 [
-  {    "Recommendations" : "اختبار واحد",                  
-    "stepControl" : "step1",
-    "Questions" : [
-      { "Type": "FreeText", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":["الرياض"]},
-      { "Type": "RadioButton", "Question": "كم يبلغ طول جبال الهملايا", "Answer":["الرياض", "القاهرة"]},
-      { "Type": "select", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":["مليون كم مربع", "مائة مليار كم مربع"]}
-    ]},
-  {    "Recommendations" : "اختبار واحد",                  
-    "stepControl" : "step1",
-    "Questions" : [
-      { "Type": "FreeText", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":["الرياض"]},
-      { "Type": "RadioButton", "Question": "كم يبلغ طول جبال الهملايا", "Answer":["الرياض", "القاهرة"]},
-      { "Type": "select", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":["مليون كم مربع", "مائة مليار كم مربع"]}
-    ]},
-  {    "Recommendations" : "اختبار واحد",                  
-    "stepControl" : "step1",
-    "Questions" : [
-      { "Type": "FreeText", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":["الرياض"]},
-      { "Type": "RadioButton", "Question": "كم يبلغ طول جبال الهملايا", "Answer":["الرياض", "القاهرة"]},
-      { "Type": "select", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":["مليون كم مربع", "مائة مليار كم مربع"]}
-    ]},
-  {    "Recommendations" : "اختبار واحد",                  
-    "stepControl" : "step1",
-    "Questions" : [
-      { "Type": "FreeText", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":["الرياض"]},
-      { "Type": "RadioButton", "Question": "كم يبلغ طول جبال الهملايا", "Answer":["الرياض", "القاهرة"]},
-      { "Type": "select", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":["مليون كم مربع", "مائة مليار كم مربع"]}
-    ]},
-  {    "Recommendations" : "اختبار واحد",                  
-    "stepControl" : "step1",
-    "Questions" : [
-      { "Type": "FreeText", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":["الرياض"]},
-      { "Type": "RadioButton", "Question": "كم يبلغ طول جبال الهملايا", "Answer":["الرياض", "القاهرة"]},
-      { "Type": "select", "Question": "ماهي عاصمة المملكة العربية السعودية", "Answer":["مليون كم مربع", "مائة مليار كم مربع"]}
-    ]},
-    {
-      "Recommendations" : "شكرا لتواصلكم معنا .....",                  
-      "stepControl" : "Completed",
-      "Questions" : []            
-     }
+  {
+    "Recommendations": " 1 الرجاء اتباع الخطوات التالية للبدء بالاختبار",
+    "stepControl": "step1",
+    "Questions": [
+      {
+        "Type": "FreeText",
+        "Question": "ماهي عاصمة الممكلة العربية السعودية",
+        "Answer": [
+          ""
+        ]
+      },
+      {
+        "Type": "RadioButton",
+        "Question": "كم حاصل جمع 1 + 1",
+        "Answer": [
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      {
+        "Type": "select",
+        "Question": "ماهي عاصمة دولة مصر العربية",
+        "Answer": [
+          "القاهرة",
+          "الخرطوم",
+          "المنامة"
+        ]
+      },
+        {
+        "Type": "FreeText",
+        "Question": "كم عدد السنوات الدراسية ",
+        "Answer": [
+          ""
+        ]
+      },
+      {
+        "Type": "FreeText",
+        "Question": "اكتب اسم فريق مشهور في السعودية",
+        "Answer": [
+          ""
+        ]
+      }
+    ]
+  },
+  {
+    "Recommendations": "2 الرجاء اتباع الخطوات التالية للبدء بالاختبار",
+    "stepControl": "step2",
+    "Questions": [
+      {
+        "Type": "FreeText",
+        "Question": "كم عدد لاعبي الفريق الواحد في كرة القدم المسموح لهم باللعب",
+        "Answer": [
+          ""
+        ]
+      },
+      {
+        "Type": "RadioButton",
+        "Question": "ماهو اسم عاصمة الامارات",
+        "Answer": [
+          "الرياض",
+          "الكويت",
+          "ابو ظبي"
+        ]
+      },
+      {
+        "Type": "FreeText",
+        "Question": "من هو أول البشر",
+        "Answer": [""]
+      },
+        {
+        "Type": "FreeText",
+        "Question": "من هي أم البشر",
+        "Answer": [
+          ""
+        ]
+      },
+      {
+        "Type": "FreeText",
+        "Question": "من هو اخر الأنبياء",
+        "Answer": [
+          ""
+        ]
+      }
+    ]
+  },
+  {
+    "Recommendations": "3 الرجاء اتباع الخطوات التالية للبدء بالاختبار",
+    "stepControl": "step3",
+    "Questions": [
+      {
+        "Type": "FreeText",
+        "Question": "ما اسم رئيس أمريكا لعام 2021",
+        "Answer": [
+          ""
+        ]
+      },
+      {
+        "Type": "FreeText",
+        "Question": "ماهو اسم الحيوان رئيس الغابة",
+        "Answer": [
+          ""          
+        ]
+      },
+      {
+        "Type": "select",
+        "Question": "ماهو صوت القط",
+        "Answer": [
+          "مواء",
+          "صفير",
+          "عواء"
+        ]
+      },
+        {
+        "Type": "FreeText",
+        "Question": "اين يقع المسجد المكي",
+        "Answer": [
+          ""
+        ]
+      },
+      {
+        "Type": "FreeText",
+        "Question": "أين يقع المسجد النبوي",
+        "Answer": [
+          ""
+        ]
+      }
+    ]
+  },
+  {
+    "Recommendations": "4 الرجاء اتباع الخطوات التالية للبدء بالاختبار",
+    "stepControl": "step4",
+    "Questions": [
+      {
+        "Type": "FreeText",
+        "Question": "في اي قارة تقع المملكة العربية السعودية",
+        "Answer": [
+          ""
+        ]
+      },
+      {
+        "Type": "RadioButton",
+        "Question": "كم عدد حاصل ضرب 2 * 2",
+        "Answer": [
+          "4",
+          "4",
+          "4"
+        ]
+      },
+      {
+        "Type": "FreeText",
+        "Question": "كم عدد اطارات السيارة",
+        "Answer": [""]
+      },
+        {
+        "Type": "FreeText",
+        "Question": "ماذا يطلق على صغير الاسد",
+        "Answer": [
+          ""
+        ]
+      },
+      {
+        "Type": "FreeText",
+        "Question": "ماهو اسمك الرباعي",
+        "Answer": [
+          ""
+        ]
+      }
+    ]
+  },
+  {
+    "Recommendations": "5 الرجاء اتباع الخطوات التالية للبدء بالاختبار",
+    "stepControl": "step5",
+    "Questions": [
+      {
+        "Type": "FreeText",
+        "Question": "ماذا تقدم خدمة جوجل",
+        "Answer": [
+          ""
+        ]
+      },
+      {
+        "Type": "RadioButton",
+        "Question": "ماهو اسم انثى الاسد",
+        "Answer": [
+          " اللبوة",
+          "اللبوة",
+          "اللبوة"
+        ]
+      },
+      {
+        "Type": "FreeText",
+        "Question": "كم عدد أسهر السنة",
+        "Answer": [""]
+      },
+        {
+        "Type": "FreeText",
+        "Question": "كم عدد أشهر السنة الهجرية",
+        "Answer": [
+          ""
+        ]
+      },
+      {
+        "Type": "FreeText",
+        "Question": "ماهو اللون التركوازي",
+        "Answer": [
+          ""
+        ]
+      }
+    ]
+  },
+  {
+    "Recommendations": "شكرا لتواصلكم معنا .....",
+    "stepControl": "Completed",
+    "Questions": []
+  }
 ]
